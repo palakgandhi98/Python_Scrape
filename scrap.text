@@ -1,0 +1,17 @@
+with python,
+url "https://www.amazon.in/s?rh=n%3A6612025031&fs=true&ref=lp_6612025031_sar" covert or save amazone.html file
+read Amazone.html and parse it with Beautifulsoup
+
+find all
+div with class="puis-card-container s-card-container s-overflow-hidden aok-relative puis-expand-height puis-include-content-margin puis puis-v3qvfbr6wwzu97251ibrrzrqee1 s-latency-cf-section puis-card-border"
+for all the divs
+
+try find span with class="a-size-base-plus a-color-base a-text-normal" and store it to Product_Name
+except Product_Name=" "
+try find span with class="a-price-whole" and store it to Product_Price
+except Product_Price=" "
+try find span with class="a-icon-alt" and store it to Product_Ratings
+except Product_Ratings=" "
+
+
+open an csv file and write Product_Name,Product_Price and Product_Ratings
